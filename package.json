@@ -1,0 +1,15 @@
+{
+  "name": "beast",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Hank Nguyen",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "sqlite": "^3.0.0"
+  }
+}
