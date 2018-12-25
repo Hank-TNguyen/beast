@@ -1,0 +1,3 @@
+New-SelfSignedCertificate `
+  -DnsName beast.com `
+  -CertStoreLocation cert:Localmachine\My
