@@ -14,8 +14,9 @@ function findCloseByClinics(position) {
 	    if (this.readyState == 4 && this.status == 200) {
 			// Typical action to be performed when the document is ready:
 			res = JSON.parse(xhr.responseText);
+			console.log(res);
 			dests = res.destination_addresses;
-			dists = res.rows[0].elements.map(e => e.distance.value);
+			dists = res.rows[0].elements.map(e => e && e.distance && e.distance.value);
 			tuple = []
 			for (i = 0; i < dests.length; i++) {
 				tuple.push({dist: dists[i], dest: dests[i]})
